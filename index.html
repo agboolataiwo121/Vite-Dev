@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<body>
+
+
+<nav class="navbar navbar-expand-lg border" style="background-color: #0b0f19;">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <img src="./media/vite-light.t8GCa_VF (1).png" alt="" style="width: 100px;">
+
+    <!-- Toggle -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+      <!-- Left Links -->
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Guide</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Config</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Plugins</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Resources ▾</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">v8.0.2 ▾</a></li>
+      </ul>
+
+      <!-- Right Side -->
+      <div class="d-flex align-items-center">
+
+        <!-- Search -->
+        <div class="search-box d-flex align-items-center me-3">
+          <i class="bi bi-search me-2"></i>
+          <input type="text" placeholder="Search">
+          <span class="ms-2 small">Ctrl K</span>
+        </div>
+
+        <!-- Icons -->
+        <i class="bi bi-bluesky icon-btn"></i>
+        <i class="bi bi-moon icon-btn"></i>
+        <i class="bi bi-twitter-x icon-btn"></i>
+        <i class="bi bi-discord icon-btn"></i>
+        <i class="bi bi-github icon-btn"></i>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<section class="hero" style="min-height: 70dvh; background-color: #0b0f19;">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT -->
+      <div class="col-lg-6">
+
+        <div class="tag p-2 my-3 text-white">BY VOID(0)</div>
+
+        <h1 class="mt-3 text-white">
+          The Build Tool <br>
+          for the Web
+        </h1>
+
+        <p class="text-dark-emphasis">
+          Vite is a blazing fast frontend build tool powering
+          the next generation of web applications.
+        </p>
+
+        <div class="mt-4 d-flex gap-3">
+          <a href="#" class="btn bg-dark text-white">Get Started</a>
+          <a href="#" class="btn btn-outline text-white">View on GitHub</a>
+        </div>
+
+        <!-- Code Box -->
+        <div class="code-box">
+          <div class="code-tabs">
+            <span class="active">npm</span>
+            <span>Yarn</span>
+            <span>pnpm</span>
+            <span>Bun</span>
+            <span>Deno</span>
+          </div>
+
+          <div class="code-content p-3" style="color: #6111DA;">
+            $ npm create vite@latest
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+        <img src="./media/Recording2026-03-31154913-ezgif.com-gif-maker.gif" alt="vite" class="hero-img" style="width: 300px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .trusted-section {
+      border: 1px solid rgba(255,255,255,0.08);
+      border-left: none;
+      border-right: none;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .logo-row {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo-item {
+      text-align: center;
+      padding: 25px 0;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      color: #bbb;
+      font-weight: 500;
+    }
+
+    .logo-item:last-child {
+      border-right: none;
+    }
+
+    .hero-section {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      margin-top: 15px;
+      color: #9aa0a6;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+
+  <!-- Trusted Text -->
+  <div class="container border">
+    Trusted by the world's best software teams
+  </div>
+
+  <!-- Logos -->
+  <div class="container-fluid logo-row">
+    <div class="row g-0" style="border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);">
+      <div class="col logo-item">
+        <img src="/media/stripe.svg" alt="" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+        </div>
+      <div class="col logo-item">Shopify</div>
+      <div class="col logo-item">Stripe</div>
+      <div class="col logo-item">Linear</div>
+      <div class="col logo-item">ClickUp</div>
+      <div class="col logo-item">Wiz</div>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="container hero-section">
+    <h1 class="hero-title">
+      Redefining developer <br> experience
+    </h1>
+    <p class="hero-subtitle">
+      Vite makes web development enjoyable again
+    </p>
+  </div>
+
+  <style>
+    body {
+      background: #0b0f19;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .features {
+      padding: 80px 0;
+    }
+
+    .feature-card {
+      /* background: #0f172a; */
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 30px;
+      height: 100%;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .feature-text {
+      color: #9ca3af;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+
+    .feature-img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    /* Gradient background block (like Vite purple glow) */
+    .gradient-box {
+      background-image: url(https://vite.dev/assets/vite-featurepanel-1-background.BHnDg8j4.jpg);
+      width: 80%;
+      height: 350px;
+      /* background: linear-gradient(135deg, #7c3aed, #4f46e5); */
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .code-box.small {
+      color: #c084fc;
+      
+    }
+
+    .gradient-box1 {
+      width: 100%;
+      height: 350px;
+      /* background: linear-gradient(135deg, #7c3aed, #4f46e5); */
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .code-box.small {
+      color: #c084fc;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="features">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <div class="feature-title">Instant Server Start</div>
+          <div class="feature-text">
+            On demand source file serving over native ESM, with blazing fast dependency pre-bundling.
+          </div>
+
+          <div class="gradient-box">
+            <div class="code-box small">
+              <img src="./media/vite-featurepanel-1-terminal.CQVUoUSU.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- CARD 2 -->
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <div class="feature-title">Lightning Fast HMR</div>
+          <div class="feature-text">
+           Instantly reflect changes as you save, no matter how big your app is.
+          </div>
+
+          <div class="gradient-box1">
+            <div class="code-box small">
+              <img src="./media/vite-featurepanel-2-terminal.ChpAU6sR.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <div class="feature-title">Lightning Fast HMR</div>
+          <div class="feature-text">
+           Instantly reflect changes as you save, no matter how big your app is.
+          </div>
+
+          <div class="gradient-box1">
+            <div class="code-box small">
+              <img src="./media/download (2).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-6">
+        <div class="feature-card">
+          <div class="feature-title">Optimized Build</div>
+          <div class="feature-text">
+            Advanced tree-shaking, built-in minification, fine-grained chunking control powered by Rollup.
+          </div>
+
+          <div class="gradient-box">
+            <div class="code-box">
+              <img src="./media/vite-featurepanel-4-terminal.BRnxuy_J.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ <style>
+    body {
+      margin: 0;
+      background-color: #0b0f19;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #fff;
+    }
+
+    .foundation-section {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 140px 20px;
+      text-align: center;
+    }
+
+    .foundation-title {
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #e6e6e6;
+    }
+
+    @media (max-width: 768px) {
+      .foundation-title {
+        font-size: 32px;
+      }
+
+      .foundation-section {
+        padding: 80px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid foundation-section">
+    <h1 class="foundation-title">
+      A shared foundation <br>
+      to build upon
+    </h1>
+  </div>
+
+   <style>
+    body {
+      margin: 0;
+      background-color: #0b0f19;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #fff;
+    }
+
+    .features {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      border-left: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .feature-box {
+      padding: 40px;
+      min-height: 320px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .feature-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #e6e6e6;
+    }
+
+    .feature-text {
+      font-size: 15px;
+      color: #9aa0a6;
+      line-height: 1.6;
+    }
+
+    /* Placeholder visual blocks */
+    .visual {
+      margin-top: 30px;
+      height: 140px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      opacity: 0.8;
+    }
+
+    .visual.dark {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    @media (max-width: 768px) {
+      .feature-box {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid features container">
+    <div class="row g-0">
+
+      <!-- Card 1 -->
+      <div class="col-md-6 feature-box">
+        <div>
+          <h3 class="feature-title">Flexible Plugin System</h3>
+          <p class="feature-text">
+            Vite plugins extends Rollup's well-designed plugin interface with a few extra Vite-specific options.
+          </p>
+        </div>
+        <div class="visual"><img src="" alt=""></div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 feature-box">
+        <div>
+          <h3 class="feature-title">Fully Typed API</h3>
+          <p class="feature-text">
+            Designed to be built on top of.
+          </p>
+        </div>
+        <div class="visual"></div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-6 feature-box">
+        <div>
+          <h3 class="feature-title">First class SSR Support</h3>
+          <p class="feature-text">
+            It's never been easier to setup custom SSR (Server-Side Rendering), or build your own SSR framework.
+          </p>
+        </div>
+        <div class="visual"></div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-6 feature-box">
+        <div>
+          <h3 class="feature-title">Continuous ecosystem integration</h3>
+          <p class="feature-text">
+            Our CI continuously tests Vite changes against downstream projects, allowing us to improve stability.
+          </p>
+        </div>
+        <div class="visual dark"></div>
+      </div>
+
+    </div>
+  </div>
+
+    <style>
+
+
+    .title {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 80px;
+      color: #e6e6e6;
+    }
+
+    /* Images */
+    .framework-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Show desktop / mobile correctly */
+    .desktop-img {
+      display: block;
+    }
+
+    .mobile-img {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 30px;
+      }
+
+      .desktop-img {
+        display: none;
+      }
+
+      .mobile-img {
+        display: block;
+      }
+    }
+  </style>
+  <div class="container-fluid frameworks-sectio container border" style="padding: 120px 20px;text-align: center; border-top: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);">
+    <!-- Desktop Image -->
+    <img src="./media/vite-frameworks.D3X8o4O8.png" 
+         alt="Frameworks Desktop" 
+         class="framework-img desktop-img" style="max-width: 100%; height: auto;">
+
+    <!-- Mobile Image -->
+    <img src="./media/vite-frameworks-mobile.BooA3_E6.png" 
+         alt="Frameworks Mobile" 
+         class="framework-img mobile-img" style="max-width: 100%;height: auto;">
+
+  </div>
+
+
+<div class="container community" style="padding: 100px 20px;border-top: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);">
+
+  <!-- Header -->
+  <div class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <h2 class="title" style="font-size: 36px;font-weight: 600;color: #e6e6e6;">Loved by the community</h2>
+      <p class="subtitle" style="color: #9aa0a6; margin-top: 10px; font-size: 15px;">
+        Don't take our word for it - listen to what users have to say.
+      </p>
+    </div>
+
+    <div class="col-md-6 stats d-flex justify-content-md-end gap-5" style="text-align: right;">
+      <div>
+        <div class="stat-number" style="font-size: 36px; font-weight: 600;">75k+</div>
+        <div class="stat-label" style="color: #9aa0a6;font-size: 14px;">Github Stars</div>
+      </div>
+      <div>
+        <div class="stat-number" style="font-size: 36px;font-weight: 600;">40m+</div>
+        <div class="stat-label" style="color: #9aa0a6;font-size: 14px;">Weekly NPM downloads</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card-custom" style="background: rgba(255,255,255,0.02);border: 1px solid rgba(255,255,255,0.08);border-radius: 12px;padding: 20px;height: 100%;transition: 0.3s;">
+        <p class="card-text">
+          I'm loving what Vite enables. We've found building SolidStart that it is less a metaframework but a system of symbiotic Vite plugins. While built with SolidJS in mind, they should scale from our simplest template to opinionated starter. We're building an ecosystem on Vite.
+        </p>
+        <div class="user">
+          <img src="./media/8Piov0f6_400x400.jpg" class="avatar">
+          <div>
+            <div class="username">Ryan Carniato</div>
+            <div class="handle">@RyanCarniato</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom">
+        <p class="card-text">
+          It's also a great platform to build a framework on since it provides a pluggable dev environment.
+        </p>
+        <p>Community is amazing too.</p>
+        <div class="user">
+          <img src="./media/BzaOWhs1_400x400.jpg" class="avatar">
+          <div>
+            <div class="username">Mark Dalgleish</div>
+            <div class="handle">@MarkDalgleish</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom">
+        <p class="card-text">
+          I am so excited to see so many great frameworks teaming up on top of vite. So many will benefit. ❤️ to the vite team.
+        </p>
+        <div class="user">
+          <img src="./media/f73b3687ff39b795db05fcaf35972270_400x400.jpeg" class="avatar">
+          <div>
+            <div class="username">Dion Almaer</div>
+            <div class="handle">@dalmaer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom">
+        <p class="card-text">
+          Vite is basically the united nations of JavaScript at this point. I'll be there as a representative of Sveltelandia
+        </p>
+        <div class="user">
+          <img src="./media/bFyXy8Pu_400x400.jpeg" class="avatar">
+          <div>
+            <div class="username">Rich Harris</div>
+            <div class="handle">@Rich-Harris</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom">
+        <p class="card-text">
+          Every time I suspect I've hit the bounds of what Vite can do, I end up being wrong.
+        </p>
+        <div class="user">
+          <img src="./media/Sc9ehtAr_400x400.jpg" class="avatar">
+          <div>
+            <div class="username">Jason Miller</div>
+            <div class="handle">@_developit</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card-custom">
+        <p class="card-text">
+          Vite is gonna eat the (JavaScript) world.
+        </p>
+        <div class="user">
+          <img src="./media/gXgT-jxL_400x400.jpg" class="avatar">
+          <div>
+            <div class="username">Christoph Nakazawa</div>
+            <div class="handle">@cpojer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<style>
+  
+
+    
+  </style>
+</head>
+
+<body>
+
+<div class="trusted-section container">
+
+  <!-- Text -->
+  <div class="trusted-text">
+    Trusted by the world's best software teams
+  </div>
+
+  <!-- Logos -->
+  <div class="logo-row" style="display: grid; grid-template-columns: repeat(6, 1fr);">
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="./media/openai.svg" alt="OpenAI" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="./media/shopify.svg" alt="Shopify" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="./media/stripe.svg" alt="Stripe" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/linear.svg" alt="Linear" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/clickup.svg" alt="ClickUp" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+    <div class="logo-item" style="padding: 30px 0;text-align: center;border-right: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/wiz.svg" alt="Wiz" style="height: 26px; opacity: 0.6;transition: 0.3s; filter: grayscale(100%);">
+    </div>
+
+  </div>
+
+</div>
+
+
+<style>
+  
+
+   
+
+   
+
+    
+
+    .btn-custom:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: #7c3aed;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 30px;
+      }
+
+      .right-box {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container opensource" style="padding: 100px 20px; border-top: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);">
+
+  <div class="row align-items-center">
+
+    <!-- Left -->
+    <div class="col-md-6">
+      <h1 class="title" style="font-size: 40px;font-weight: 600;margin-bottom: 20px;color: #e6e6e6;">Free & open source</h1>
+
+      <p class="text" style="color: #9aa0a6;font-size: 18px;line-height: 1.7;max-width: 500px;">
+        Vite is MIT Licensed and will always be free and open source. This is made possible 
+        by our contributors and these companies:
+      </p>
+
+      <button class="btn-custom" style="margin-top: 25px;padding: 10px 20px;border: 1px solid rgba(255,255,255,0.15);background: transparent;color: #fff;border-radius: 8px;transition: 0.3s;">
+        Become a Sponsor</button>
+    </div>
+
+    <!-- Right (Your Image) -->
+    <div class="col-md-6 text-center">
+      <div class="right-box" style="display: flex; align-items: center; justify-content: center;">
+        <img src="/media/vite-by-voidzero.D7bblMgo.png" alt="VoidZero" style="height: 150px;">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="partners" style="border-top: 1px solid rgba(255,255,255,0.08); border-left: 1px solid rgba(255,255,255,0.08);">
+
+  <!-- Partnership -->
+  <div class="section-label" style="padding: 15px 25px;font-size: 12px;color: #9aa0a6;letter-spacing: 1px;border-bottom: 1px solid rgba(255,255,255,0.08);text-transform: uppercase;">
+    In partnership with</div>
+  <div class="grid" style="display: grid; grid-template-columns: repeat(2, 1fr);">
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/download (1).svg" alt="Bolt" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/download (3).svg" alt="Labs" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+  </div>
+
+  <!-- Sponsors -->
+  <div class="section-label" style="padding: 15px 25px;font-size: 12px;color: #9aa0a6;letter-spacing: 1px;border-bottom: 1px solid rgba(255,255,255,0.08);text-transform: uppercase;">
+    Platinum Sponsors</div>
+  <div class="grid-3" style="display: grid;grid-template-columns: repeat(3, 1fr);">
+
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/storyblok.png" alt="Storyblok" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/coderabbit_.png" alt="CodeRabbit" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/greptile.png" alt="Greptile" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/railway.svg" alt="Railway" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+
+    <div class="item" style="display: flex;align-items: center;justify-content: center;padding: 50px 20px;border-right: 1px solid rgba(255,255,255,0.08);border-bottom: 1px solid rgba(255,255,255,0.08);transition: 0.3s;">
+      <img src="/media/serpapi.png" alt="SerpApi" style="max-height: 40px;max-width: 160px;opacity: 0.7;filter: grayscale(100%);transition: 0.3s;">
+    </div>
+
+    <div class="item"></div>
+
+  </div>
+
+</div>
+
+
+<style>
+    
+
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 45px 20px;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: 0.3s;
+    }
+
+    .item img {
+      max-height: 32px;
+      max-width: 150px;
+      opacity: 0.7;
+      filter: grayscale(100%);
+      transition: 0.3s;
+    }
+
+    .item:hover img {
+      opacity: 1;
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    .item:hover {
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* Special larger image (truck) */
+    .item.large img {
+      max-height: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="gold-section" style="border-top: 1px solid rgba(255,255,255,0.08);border-left: 1px solid rgba(255,255,255,0.08);">
+
+  <!-- Title -->
+  <div class="section-label" style="padding: 15px 25px;font-size: 12px;color: #9aa0a6;letter-spacing: 1px;text-transform: uppercase;border-bottom: 1px solid rgba(255,255,255,0.08);">
+    Gold Sponsors</div>
+
+  <!-- Grid -->
+  <div class="grid" style="display: grid;grid-template-columns: repeat(5, 1fr);">
+
+    <div class="item"><img src="/media/mux.svg"></div>
+    <div class="item"><img src="/media/nx.svg"></div>
+    <div class="item"><img src="media/transloadit.png"></div>
+    <div class="item"><img src="/media/handsontable.svg"></div>
+    <div class="item"><img src="/media/mojam.svg"></div>
+
+    <div class="item"><img src="/media/convex.svg"></div>
+    <div class="item"><img src="/media/tonkotsu.png"></div>
+    <div class="item"><img src="/media/catalyst.svg"></div>
+    <div class="item"><img src="zephyr_cloud.png"></div>
+    <div class="item"><img src="/media/sanity.svg"></div>
+
+    <div class="item"><img src="/media/follower24.svg"></div>
+    <div class="item large"><img src="/media/aerius_ventilation.png"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+
+  </div>
+</div>
+
+<style>
+    
+
+    /* Background image */
+    .cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("https://vite.dev/assets/footer-background.BIgtbvhx.jpg") center/cover no-repeat;
+      z-index: -2;
+    }
+
+    /* Dark overlay for readability */
+    .cta::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 15, 25, 0.5);
+      z-index: -1;
+    }
+
+    .cta-btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .cta h1 {
+        font-size: 32px;
+      }
+
+      .cta p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="cta" style="position: relative;padding: 120px 20px;text-align: center;overflow: hidden;">
+
+  <h1 style="font-size: 48px;font-weight: 600;margin-bottom: 20px;">Start building with Vite</h1>
+
+  <p style="font-size: 18px;color: #e5e7eb;max-width: 600px;margin: 0 auto 30px;line-height: 1.6;">
+    Prepare for a development environment that can finally keep pace 
+    with the speed of your mind.
+  </p>
+
+  <button class="cta-btn" style="background: #e5e7eb;color: #111;border: none;padding: 10px 22px;border-radius: 10px;font-weight: 500;transition: 0.3s;">Get Started</button>
+
+</div>
+
+<style>
+    
+     
+  </style>
+</head>
+
+<body>
+
+<div class="container footer" style="padding: 80px 20px 30px;border-top: 1px solid rgba(255,255,255,0.08);">
+
+  <div class="row">
+
+    <!-- Vite -->
+    <div class="col-md-3">
+      <div class="footer-title" style="font-size: 12px;letter-spacing: 1px;color: #9aa0a6;margin-bottom: 20px;text-transform: uppercase;">Vite</div>
+      <a href="#">Guide</a>
+      <a href="#">Config</a>
+      <a href="#">Plugins</a>
+    </div>
+
+    <!-- Resources -->
+    <div class="col-md-3">
+      <div class="footer-title" style="font-size: 12px;letter-spacing: 1px;color: #9aa0a6;margin-bottom: 20px;text-transform: uppercase;">Resources</div>
+      <a href="#">Team</a>
+      <a href="#">Blog</a>
+      <a href="#">Releases</a>
+    </div>
+
+    <!-- Versions -->
+    <div class="col-md-3">
+      <div class="footer-title" style="font-size: 12px;letter-spacing: 1px;color: #9aa0a6;margin-bottom: 20px;text-transform: uppercase;">Versions</div>
+      <a href="#">Unreleased Docs</a>
+      <a href="#">Vite 7 Docs</a>
+      <a href="#">Vite 6 Docs</a>
+      <a href="#">Vite 5 Docs</a>
+      <a href="#">Vite 4 Docs</a>
+      <a href="#">Vite 3 Docs</a>
+      <a href="#">Vite 2 Docs</a>
+    </div>
+
+    <!-- Social -->
+    <div class="col-md-3 social">
+      <div class="footer-title" style="font-size: 12px;letter-spacing: 1px;color: #9aa0a6;margin-bottom: 20px;text-transform: uppercase;">Social</div>
+      <a href="#"><i class="bi bi-github"></i> GitHub</a>
+      <a href="#"><i class="bi bi-discord"></i> Discord</a>
+      <a href="#"><i class="bi bi-cloud"></i> Bluesky</a>
+      <a href="#"><i class="bi bi-x"></i> X.com</a>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom" style="margin-top: 60px;padding-top: 20px;border-top: 1px solid rgba(255,255,255,0.08);font-size: 13px;color: #9aa0a6;">
+    © 2019-present VoidZero Inc. and Vite contributors. (dbc180d5)
+  </div>
+
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

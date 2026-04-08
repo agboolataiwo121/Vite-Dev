@@ -1,0 +1,201 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.nav-link {
+      color: white !important;
+      margin: 0 10px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .search-box input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      outline: none;
+      width: 120px;
+    }
+
+    .icon-btn {
+      color: #cbd5f5;
+      font-size: 18px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .code-box {
+      background: #0f172a;
+      border-radius: 12px;
+      margin-top: 40px;
+      overflow: hidden;
+      border: 1px solid #1f2937;
+    }
+
+    .code-tabs {
+      display: flex;
+      padding: 10px 20px;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    .code-tabs span {
+      margin-right: 20px;
+      color: #9ca3af;
+      cursor: pointer;
+    }
+     .main-heading {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .main-heading p {
+      color: #9ca3af;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 30px;
+      }
+
+      .desktop-img {
+        display: none;
+      }
+
+      .mobile-img {
+        display: block;
+      }
+    }
+
+    .card-custom:hover {
+      border-color: #7c3aed;
+      box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+    }
+    .card-custom {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
+      padding: 20px;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    .card-custom:hover {
+      border-color: #7c3aed;
+      box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+    }
+
+    .card-text {
+      font-size: 14px;
+      color: #c9c9c9;
+      line-height: 1.6;
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .username {
+      font-size: 13px;
+      color: #ddd;
+      font-weight: 500;
+    }
+
+    .handle {
+      font-size: 12px;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .stats {
+        text-align: left;
+        margin-top: 30px;
+      }
+    }
+    .logo-item:last-child {
+      border-right: none;
+    }
+
+    .logo-item:hover img {
+      opacity: 1;
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    .logo-item:hover {
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .logo-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .logo-item {
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+      }
+    }
+
+    .item:hover img {
+      opacity: 1;
+      filter: grayscale(0%);
+      transform: scale(1.05);
+    }
+
+    .item:hover {
+      background: rgba(255,255,255,0.02);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid, .grid-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+      /* Background image */
+    .cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("https://vite.dev/assets/footer-background.BIgtbvhx.jpg") center/cover no-repeat;
+      z-index: -2;
+    }
+
+    /* Dark overlay for readability */
+    .cta::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 15, 25, 0.5);
+      z-index: -1;
+    }
+
+    .cta-btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .cta h1 {
+        font-size: 32px;
+      }
+
+      .cta p {
+        font-size: 16px;
+      }
+    }
